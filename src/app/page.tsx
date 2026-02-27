@@ -1,10 +1,11 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { apps as initialApps } from "@/data/apps";
 import type { App } from "@/data/apps";
 import Sidebar from "@/components/Sidebar";
 import AppDetail from "@/components/AppDetail";
+import MobileAppSwitcher from "@/components/MobileAppSwitcher";
 
 interface AppStoreMeta {
   trackId: number;
@@ -39,20 +40,29 @@ export default function Home() {
       .catch(() => {});
   }, []);
 
-  const handleNameChange = useCallback((id: string, newName: string) => {
-    setApps((prev) =>
-      prev.map((app) => (app.id === id ? { ...app, name: newName } : app))
-    );
-  }, []);
-
   return (
-    <div className="flex min-h-screen bg-[#fafafa] px-24 py-16 gap-24">
-      <Sidebar
-        apps={apps}
-        selectedId={selectedId}
-        onSelect={setSelectedId}
-      />
-      <AppDetail app={selectedApp} onNameChange={handleNameChange} />
-    </div>
+    <>
+      {/* Desktop layout */}
+      <div className="hidden md:flex min-h-screen bg-[#fafafa] pl-24 py-16 gap-24 overflow-hidden">
+        <Sidebar
+          apps={apps}
+          selectedId={selectedId}
+          onSelect={setSelectedId}
+        />
+        <AppDetail app={selectedApp} />
+      </div>
+
+      {/* Mobile layout */}
+      <div className="flex flex-col min-h-screen bg-white md:hidden">
+        <div className="flex-1 px-6 pt-7 pb-24">
+          <AppDetail app={selectedApp} />
+        </div>
+        <MobileAppSwitcher
+          apps={apps}
+          selectedId={selectedId}
+          onSelect={setSelectedId}
+        />
+      </div>
+    </>
   );
 }

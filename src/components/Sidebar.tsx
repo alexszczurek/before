@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import type { App } from "@/data/apps";
+import { playClick } from "@/lib/sounds";
 
 interface SidebarProps {
   apps: App[];
@@ -24,10 +25,13 @@ export default function Sidebar({ apps, selectedId, onSelect }: SidebarProps) {
           return (
             <button
               key={app.id}
-              onClick={() => onSelect(app.id)}
+              onClick={() => {
+                playClick();
+                onSelect(app.id);
+              }}
               className="sidebar-item flex items-center gap-2 text-left min-h-11 -mx-1.5 px-1.5 rounded-lg"
             >
-              <div className="relative rounded-[6.4px] shrink-0 size-6 overflow-hidden">
+              <div className="relative squircle-sm shrink-0 size-6 overflow-hidden">
                 <Image
                   src={app.icon}
                   alt={app.name}

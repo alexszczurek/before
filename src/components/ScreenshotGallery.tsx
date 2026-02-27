@@ -3,6 +3,7 @@
 import { useState, useRef, useCallback } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
+import { playPop } from "@/lib/sounds";
 
 interface ScreenshotGalleryProps {
   screenshots: string[];
@@ -108,6 +109,7 @@ export default function ScreenshotGallery({
         new ClipboardItem({ "image/png": blob }),
       ]);
 
+      playPop();
       setCopyAllState("done");
       setTimeout(() => setCopyAllState("idle"), 2000);
     } catch {
@@ -124,6 +126,7 @@ export default function ScreenshotGallery({
         await navigator.clipboard.write([
           new ClipboardItem({ "image/png": blob }),
         ]);
+        playPop();
         setCopiedIndex(index);
         setTimeout(() => setCopiedIndex(null), 1500);
       } catch {
@@ -169,9 +172,9 @@ export default function ScreenshotGallery({
   }, []);
 
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-3 -mx-6 md:mx-0">
       {imageScreenshots.length > 0 && (
-        <div className="flex justify-end">
+        <div className="hidden md:flex justify-end pr-24">
           <button
             onClick={copyAllToClipboard}
             disabled={copyAllState === "loading"}
