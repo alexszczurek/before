@@ -221,7 +221,7 @@ export default function ScreenshotGallery({
       )}
       <motion.div
         ref={scrollRef}
-        className="gallery-scroll flex gap-5 overflow-x-auto pb-4 cursor-grab"
+        className="gallery-scroll flex gap-5 overflow-x-auto pb-4 cursor-grab pl-6 md:pl-0"
         variants={container}
         initial={shouldReduceMotion ? "show" : "hidden"}
         animate="show"

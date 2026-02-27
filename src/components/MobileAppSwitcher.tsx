@@ -75,7 +75,7 @@ export default function MobileAppSwitcher({
 
   return (
     <div className="fixed bottom-4 left-4 z-50 md:hidden pb-[env(safe-area-inset-bottom)]">
-      <div className="bg-white rounded-2xl pt-2 pb-1 px-2 shadow-[0_2px_12px_rgba(0,0,0,0.1),0_0_0_1px_rgba(0,0,0,0.04)] max-w-[calc(100vw-32px)] overflow-hidden">
+      <div className="bg-white rounded-2xl pt-1.5 pb-0.5 px-1.5 shadow-[0_2px_12px_rgba(0,0,0,0.1),0_0_0_1px_rgba(0,0,0,0.04)] max-w-[calc(100vw-32px)] overflow-hidden">
         <div
           ref={scrollRef}
           className="mobile-switcher-scroll flex items-end gap-3 overflow-x-auto touch-none"
