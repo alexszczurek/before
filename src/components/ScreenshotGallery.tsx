@@ -25,7 +25,7 @@ const item = {
     transform: "translateY(0px)",
     transition: {
       duration: 0.25,
-      ease: [0.165, 0.84, 0.44, 1],
+      ease: [0.165, 0.84, 0.44, 1] as const,
     },
   },
 };
