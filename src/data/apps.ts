@@ -230,6 +230,28 @@ export const apps: App[] = [
     ],
   },
   {
+    id: "lazyweather",
+    name: "Lazy Weather",
+    icon: "/appstore/lazyweather/logo.jpg",
+    category: "Lifestyle",
+    description:
+      "Understand weather changes by comparing today to yesterday. Quickly decide what to wear without unnecessary features — just colder or warmer.",
+    appStoreId: 6467009014,
+    accentColor: "#3b82f6",
+    screenshots: [
+      "/appstore/lazyweather/1.webp",
+      "/appstore/lazyweather/2.webp",
+      "/appstore/lazyweather/3.webp",
+      "/appstore/lazyweather/4.webp",
+      "/appstore/lazyweather/5.webp",
+      "/appstore/lazyweather/6.webp",
+      "/appstore/lazyweather/7.webp",
+      "/appstore/lazyweather/8.webp",
+      "/appstore/lazyweather/9.webp",
+      "/appstore/lazyweather/10.webp",
+    ],
+  },
+  {
     id: "knitflow",
     name: "Knitflow",
     icon: "/appstore/knitflow/logo.webp",
@@ -244,6 +266,24 @@ export const apps: App[] = [
       "/appstore/knitflow/4.webp",
       "/appstore/knitflow/5.webp",
       "/appstore/knitflow/6.webp",
+    ],
+  },
+  {
+    id: "oneyear",
+    name: "one year",
+    icon: "/appstore/oneyear/logo.jpg",
+    category: "Health & Fitness",
+    description:
+      "Write one short (or long) memory + add an image each day. Every entry becomes a hand-drawn plant, slowly forming a garden over the year. Journaling that feels light, visual, and easy to keep up with.",
+    appStoreId: 6740510762,
+    accentColor: "#10b981",
+    screenshots: [
+      "/appstore/oneyear/1.png",
+      "/appstore/oneyear/2.webp",
+      "/appstore/oneyear/3.webp",
+      "/appstore/oneyear/4.webp",
+      "/appstore/oneyear/5.webp",
+      "/appstore/oneyear/6.webp",
     ],
   },
 ];
