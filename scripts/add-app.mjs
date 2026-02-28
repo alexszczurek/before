@@ -130,7 +130,8 @@ function makeDescription(raw) {
 }
 
 async function main() {
-  const { dir, search, accentColor: userColor } = parseArgs();
+  const { dir: rawDir, search, accentColor: userColor } = parseArgs();
+  const dir = rawDir.toLowerCase();
 
   const appDir = join(PUBLIC_DIR, dir);
 
