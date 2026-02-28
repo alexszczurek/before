@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { readdir, writeFile, readFile } from "fs/promises";
+import { readdir, writeFile, readFile, mkdir } from "fs/promises";
 import { join, extname } from "path";
 import { argv } from "process";
 
@@ -25,6 +25,9 @@ function parseArgs() {
     console.error("  --dir     Folder name inside /public/appstore/");
     console.error("  --search  iTunes search query (app name)");
     console.error('  --color   Accent color hex (default: auto-picked)');
+    console.error("");
+    console.error("Screenshots are fetched from the App Store automatically.");
+    console.error("If /public/appstore/<dir>/ already has images, those are used instead.");
     process.exit(1);
   }
 
@@ -39,16 +42,23 @@ async function searchItunes(query) {
   return data.results || [];
 }
 
-// Download icon
-async function downloadIcon(url, destPath) {
+// Download a file
+async function downloadFile(url, destPath) {
   const res = await fetch(url);
+  if (!res.ok) throw new Error(`Failed to download ${url}: ${res.status}`);
   const buffer = await res.arrayBuffer();
   await writeFile(destPath, Buffer.from(buffer));
 }
 
 // List screenshots in directory
 async function listScreenshots(dirPath) {
-  const files = await readdir(dirPath);
+  let files;
+  try {
+    files = await readdir(dirPath);
+  } catch {
+    return [];
+  }
+
   const imageExts = [".webp", ".png", ".jpg", ".jpeg"];
   const videoExts = [".mp4", ".mov", ".webm"];
   const allExts = [...imageExts, ...videoExts];
@@ -59,11 +69,36 @@ async function listScreenshots(dirPath) {
       return allExts.includes(ext) && !f.startsWith("logo");
     })
     .sort((a, b) => {
-      // Natural sort: 1.webp, 2.webp, ..., 10.webp
       const numA = parseInt(a.match(/\d+/)?.[0] || "0");
       const numB = parseInt(b.match(/\d+/)?.[0] || "0");
       return numA - numB;
     });
+}
+
+// Download App Store screenshots
+async function fetchScreenshots(screenshotUrls, appDir) {
+  if (!screenshotUrls || screenshotUrls.length === 0) return [];
+
+  await mkdir(appDir, { recursive: true });
+
+  const downloaded = [];
+  for (let i = 0; i < screenshotUrls.length; i++) {
+    const url = screenshotUrls[i];
+    // Get original format from URL, default to jpg
+    const ext = url.match(/\.(png|jpg|jpeg|webp)/i)?.[1]?.toLowerCase() || "jpg";
+    const filename = `${i + 1}.${ext}`;
+    const destPath = join(appDir, filename);
+
+    process.stdout.write(`  Downloading screenshot ${i + 1}/${screenshotUrls.length}...\r`);
+    try {
+      await downloadFile(url, destPath);
+      downloaded.push(filename);
+    } catch (err) {
+      console.warn(`  Warning: Failed to download screenshot ${i + 1}: ${err.message}`);
+    }
+  }
+  console.log(`  Downloaded ${downloaded.length} screenshots`);
+  return downloaded;
 }
 
 // Pick a default accent color based on category
@@ -91,7 +126,6 @@ function pickAccentColor(genre) {
 // Truncate description to a reasonable app-card length
 function makeDescription(raw) {
   if (!raw) return "";
-  // Take first 2 sentences or 200 chars
   const sentences = raw.split(/(?<=[.!?])\s+/);
   let desc = "";
   for (const s of sentences) {
@@ -106,23 +140,7 @@ async function main() {
 
   const appDir = join(PUBLIC_DIR, dir);
 
-  // 1. Check directory exists and list screenshots
-  let screenshots;
-  try {
-    screenshots = await listScreenshots(appDir);
-  } catch {
-    console.error(`Error: Directory /public/appstore/${dir}/ not found`);
-    process.exit(1);
-  }
-
-  if (screenshots.length === 0) {
-    console.error(`Error: No screenshot files found in /public/appstore/${dir}/`);
-    process.exit(1);
-  }
-
-  console.log(`Found ${screenshots.length} screenshots in /public/appstore/${dir}/`);
-
-  // 2. Search iTunes
+  // 1. Search iTunes first (we need the data either way)
   console.log(`Searching iTunes for: "${search}"...`);
   const results = await searchItunes(search);
 
@@ -131,21 +149,37 @@ async function main() {
     process.exit(1);
   }
 
-  // Pick first result (or let user choose)
   const app = results[0];
   console.log(`Found: ${app.trackName} (${app.primaryGenreName}) - ID: ${app.trackId}`);
 
+  // 2. Check for existing screenshots, or fetch from App Store
+  let screenshots = await listScreenshots(appDir);
+
+  if (screenshots.length > 0) {
+    console.log(`Found ${screenshots.length} local screenshots in /public/appstore/${dir}/`);
+  } else {
+    console.log(`No local screenshots found. Fetching from App Store...`);
+    const urls = app.screenshotUrls || [];
+    if (urls.length === 0) {
+      console.error("No screenshots available from App Store either.");
+      process.exit(1);
+    }
+    await fetchScreenshots(urls, appDir);
+    screenshots = await listScreenshots(appDir);
+  }
+
   // 3. Download icon
+  await mkdir(appDir, { recursive: true });
   const iconUrl = app.artworkUrl512 || app.artworkUrl100?.replace("100x100", "512x512");
   const iconExt = ".jpg";
   const iconPath = join(appDir, `logo${iconExt}`);
   console.log("Downloading icon...");
-  await downloadIcon(iconUrl, iconPath);
+  await downloadFile(iconUrl, iconPath);
   console.log(`Icon saved to /public/appstore/${dir}/logo${iconExt}`);
 
   // 4. Build the entry
   const id = dir;
-  const name = app.trackName.split(/[:\-–]/)[0].trim(); // Use short name before colon/dash
+  const name = app.trackName.split(/[:\-–]/)[0].trim();
   const category = app.primaryGenreName;
   const description = makeDescription(app.description);
   const accentColor = userColor || pickAccentColor(category);

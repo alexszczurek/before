@@ -172,7 +172,7 @@ export default function ScreenshotGallery({
   }, []);
 
   return (
-    <div className="flex flex-col gap-3 -mx-6 md:mx-0">
+    <div className="flex flex-col gap-3 -mx-6 md:mx-0 md:flex-1 md:min-h-0">
       {imageScreenshots.length > 0 && (
         <div className="hidden md:flex justify-end pr-24">
           <button
@@ -221,7 +221,7 @@ export default function ScreenshotGallery({
       )}
       <motion.div
         ref={scrollRef}
-        className="gallery-scroll flex gap-5 overflow-x-auto pb-4 cursor-grab pl-6 md:pl-0"
+        className="gallery-scroll flex gap-5 overflow-x-auto pb-4 cursor-grab pl-6 md:pl-0 md:flex-1 md:min-h-0 md:items-stretch"
         variants={container}
         initial={shouldReduceMotion ? "show" : "hidden"}
         animate="show"
@@ -238,12 +238,12 @@ export default function ScreenshotGallery({
             <motion.div
               key={`${appName}-${index}`}
               variants={shouldReduceMotion ? undefined : item}
-              className="shrink-0 will-change-transform"
+              className="shrink-0 will-change-transform md:h-full"
               onClick={() => {
                 if (!isVideo) copySingleToClipboard(src, index);
               }}
             >
-              <div className="relative w-[274px] aspect-[274/594] rounded-[28px] overflow-hidden border border-[#e5e5e5]">
+              <div className="relative w-[274px] aspect-[274/594] md:w-auto md:h-full md:aspect-[274/594] rounded-[28px] overflow-hidden border border-[#e5e5e5]">
                 {isVideo ? (
                   <video
                     src={src}

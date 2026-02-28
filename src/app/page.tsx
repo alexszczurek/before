@@ -43,13 +43,17 @@ export default function Home() {
   return (
     <>
       {/* Desktop layout */}
-      <div className="hidden md:flex min-h-screen bg-[#fafafa] pl-24 py-16 gap-24 overflow-hidden">
-        <Sidebar
-          apps={apps}
-          selectedId={selectedId}
-          onSelect={setSelectedId}
-        />
-        <AppDetail app={selectedApp} />
+      <div className="hidden md:flex h-screen bg-[#fafafa] pl-24 gap-24 overflow-hidden">
+        <div className="shrink-0 py-16 overflow-y-auto sidebar-scroll">
+          <Sidebar
+            apps={apps}
+            selectedId={selectedId}
+            onSelect={setSelectedId}
+          />
+        </div>
+        <div className="flex-1 min-h-0 flex flex-col py-16">
+          <AppDetail app={selectedApp} />
+        </div>
       </div>
 
       {/* Mobile layout */}
