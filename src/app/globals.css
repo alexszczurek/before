@@ -66,8 +66,38 @@ body {
   }
 }
 
+/* Article icon hover animation */
+.article-icon-dot,
+.article-icon-line1,
+.article-icon-line2 {
+  transition: transform 150ms ease, opacity 150ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .sidebar-item:hover .article-icon-dot {
+    transform: scale(1.15);
+    transform-origin: 4.75px 4.75px;
+  }
+
+  .sidebar-item:hover .article-icon-line1 {
+    transform: translateX(1.5px);
+    opacity: 1;
+  }
+
+  .sidebar-item:hover .article-icon-line2 {
+    transform: translateX(2.5px);
+    opacity: 1;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .sidebar-item {
+    transition: none;
+  }
+
+  .article-icon-dot,
+  .article-icon-line1,
+  .article-icon-line2 {
     transition: none;
   }
 }
