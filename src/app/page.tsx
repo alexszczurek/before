@@ -51,7 +51,7 @@ export default function Home() {
             onSelect={setSelectedId}
           />
         </div>
-        <div className="flex-1 min-h-0 flex flex-col py-16">
+        <div className="flex-1 min-h-0 overflow-y-auto sidebar-scroll pt-16">
           <AppDetail app={selectedApp} />
         </div>
       </div>

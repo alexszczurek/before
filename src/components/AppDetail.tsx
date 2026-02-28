@@ -23,7 +23,7 @@ export default function AppDetail({ app }: AppDetailProps) {
     : app.description + " ";
 
   return (
-      <div key={app.id} className="content-enter flex-1 flex flex-col gap-5 md:gap-8 min-w-0 min-h-0">
+      <div key={app.id} className="content-enter flex flex-col gap-5 md:gap-8 min-w-0">
         <div className="flex flex-col gap-3.5 max-w-lg">
           <div className="flex items-center gap-4">
             <div className="relative squircle shrink-0 size-16 overflow-hidden">

@@ -123,16 +123,10 @@ function pickAccentColor(genre) {
   return map[genre] || "#6366f1";
 }
 
-// Truncate description to a reasonable app-card length
+// Clean up description (remove excessive whitespace, keep full text)
 function makeDescription(raw) {
   if (!raw) return "";
-  const sentences = raw.split(/(?<=[.!?])\s+/);
-  let desc = "";
-  for (const s of sentences) {
-    if ((desc + " " + s).length > 200) break;
-    desc = desc ? desc + " " + s : s;
-  }
-  return desc || raw.slice(0, 200);
+  return raw.replace(/\n{3,}/g, "\n\n").trim();
 }
 
 async function main() {

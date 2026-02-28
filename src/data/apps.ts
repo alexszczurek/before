@@ -16,7 +16,7 @@ export const apps: App[] = [
     icon: "/appstore/notboringcamera/logo.jpg",
     category: "Photo & Video",
     description:
-      "\"The most fun camera app I've used in forever.\" — The Verge\n\"My go-to for iPhone photography\" — Washington Post\n\"It’s so fun to use.\" —MKBHD\n\nCapture unique, honest, inspiring photos like the Pros in ",
+      "\"The most fun camera app I've used in forever.\" — The Verge\n\"My go-to for iPhone photography\" — Washington Post\n\"It’s so fun to use.\" —MKBHD\n\nCapture unique, honest, inspiring photos like the Pros in a fun, playful camera.\n\nSUPER RAW™\nNo AI or over-processed photos. Just natural grain, sharper images, & film-like exposures. Save Raw digital negative files (DNG) for processing in other tools like Darkroom, Lightroom, or Photoshop. Or capture using Apple's professional-level ProRaw.\n\nSKIP THE EDITS\nFrom snap to share. !Camera is the first camera app to enable professional color grading with 3D LUTs (”lookup tables”) used in high-end workflows by professional photographers to achieve realistic film simulations and unique cinematic looks. Use !Camera’s presets, add LUTs from your favorite creators, or make & import your own! New Styles and pro collaborations released every season. \n\nMAKE IT YOURS\nCustomize every part of your camera to fit your vibe. Share colorways with others.\n\nHDR\nExtend your photo’s dynamic range with HDR to save additional highlight detail and color depth.\n\nLOVE THE FEEL\nClick. Tick. Snap. First fully-3D camera interface with dynamic lighting, sounds, & custom haptics that evokes the feel of holding a real camera.\n\nPRO CONTROL\nUse Auto mode for easy captures or switch to Manual for full control over exposure, shutter speed, ISO, white balance, and focus with pro-level tools like focus peaking, histogram, and zebra stripes. \n\nONE-TAP FAST\nFrom lock screen to first snap in under 1 second. Add shortcuts to your lock screen, home screen, widgets, camera control, control settings, wherever.\n\n100% PRIVATE\nWe collect nothing. We store nothing. We share nothing.",
     appStoreId: 6737783441,
     accentColor: "#f97316",
     screenshots: [
@@ -35,7 +35,8 @@ export const apps: App[] = [
     name: "Amie",
     icon: "/appstore/amie/logo.webp",
     category: "Productivity",
-    description: "",
+    description:
+      "The joyful productivity app.\nSchedule time for todos, events, and contacts.\n\n- Use your calendar as a todo list\n- Color your calendar to organize\n- Instantly know if someone is available\n- Track what you listened to when\n- Send scheduling links guests love\n- Always know what your team is up to",
     appStoreId: 1548277133,
     accentColor: "#f472b6",
     screenshots: [
@@ -51,7 +52,8 @@ export const apps: App[] = [
     name: "Family",
     icon: "/appstore/family/logo.png",
     category: "Utilities",
-    description: "",
+    description:
+      "Family is the perfect self-custody Ethereum wallet for those who want to keep their crypto close to home. With Family, you can easily send and receive tokens, as well as manage your favorite digital collectibles. Plus, our user-friendly interface makes it easy for anyone to get started with crypto. So whether you're a beginner or a seasoned pro, Family is the perfect wallet for you.",
     appStoreId: 1606779267,
     accentColor: "#2dd4bf",
     screenshots: [
@@ -70,7 +72,8 @@ export const apps: App[] = [
     name: "my mind",
     icon: "/appstore/mymind/logo.webp",
     category: "Productivity",
-    description: "",
+    description:
+      "mymind isn't another productivity app. It's a quiet, private garden for the things you care most about.\n\nWith just a single tap you can save images, notes, articles, products, text highlights, recipes, movies or other bookmarks to your mind. It works effortlessly via the share sheet.\n\nOne place for everything you care about. No need to file it, label or even tag it. It's all magically organized and visualized for you.\n\nSome call mymind it a treasure trove of ideas, inspiration & references. \n\nNo algorithms selling your data, no social feeds fighting for your attention. It's just you and your mind, extended into a clean, private and almost magical space that feels less like software and more like memory itself.",
     appStoreId: 1520332347,
     accentColor: "#f97316",
     screenshots: [
@@ -87,7 +90,8 @@ export const apps: App[] = [
     name: "Joi Planner",
     icon: "/appstore/joi/logo.webp",
     category: "Productivity",
-    description: "",
+    description:
+      "A calendar, task manager, and habit tracker in one app and on one timeline. Plan your daily routine with Joi!\n\nAre you tired of using different apps to plan your calendar, to-do list, and build habits? With the Joi planner, you can record your tasks, habits, business meetings, personal events, and much more on a single visual timeline. The app is designed to enhance your productivity and is perfect for students, people with ADHD, autism, and anyone looking to structure their daily routine and manage their activities.\n\nKey features and benefits of Joi:\n- Quick creation and adjustment of tasks and events. Manage your daily routine.\n- Convenient tracking of daily or weekly habits. Build useful habits.\n- An intuitive app and visual calendar displaying all your tasks, habits, and events. Track everything in one place.\n- Seamless synchronization with your calendar and reminders for quick transfer of tasks, habits, and further effective management.\n- The app is accessible from any device. Download Joi on all your devices to always have access for managing your tasks and habits.\n- Joi can remind you of all important tasks. Turn on notifications to ensure you don’t forget anything.\n\nImprove your self-organization skills and build habits using the convenient Joi planner!\n\n- Terms of Use: \n- Privacy Policy:",
     appStoreId: 6736852235,
     accentColor: "#f43f5e",
     screenshots: [
@@ -104,7 +108,8 @@ export const apps: App[] = [
     name: "Raycast",
     icon: "/appstore/raycast/logo.webp",
     category: "Productivity",
-    description: "",
+    description:
+      "Introducing Raycast for iOS: Your all-in-one productivity toolkit with AI, notes, and more – now on mobile as the perfect companion to the macOS app.\n\nThe app brings your favorite productivity tools from the Mac into your pocket. With Raycast for iOS, you can:\n• Chat with dozens of AI models from leading providers to get the perfect answers for any task\n• Capture, organize, and access your thoughts to never lose an important idea again\n• Save and open Quicklinks for instant access to your most important resources\n• Store and reuse code snippets and templates to save time on repetitive workflows\n• Enjoy seamless cloud sync to keep all your content updated across devices\n\nWhether you're a long-time Mac user or just discovering Raycast on iOS, you'll have your essential productivity tools always at hand. Raycast for iOS seamlessly extends your desktop workflow to mobile, ensuring you stay productive and organized wherever life takes you.",
     appStoreId: 6503428327,
     accentColor: "#ef4444",
     screenshots: [
@@ -121,7 +126,8 @@ export const apps: App[] = [
     name: "Arc Search",
     icon: "/appstore/arc/logo.webp",
     category: "Utilities",
-    description: "",
+    description:
+      "Arc Search is the modern, AI-enabled mobile browser you’ve been waiting for —focused on getting you to an answer faster, and without all the clutter of the internet.\n\nSEARCH YOUR WAY\n\nArc adapts to your needs — use traditional text search, go hands-free with VOICE SEARCH and CALL ARC, or let our features BROWSE FOR ME and PINCH TO SUMMARIZE take the heavy lifting out of your search journey. With intuitive AI summarization, Arc Search condenses webpages into concise insights, delivering the perfect answer to any question you have – no more endless scrolling or information overload.\n\nAD FREE, DISTRACTION FREE BROWSING\n\nEnjoy an ad-free, distraction-free web experience that's clutter-free (and great for ADHD) with:\n- Always-on blocking of ads, trackers, GDPR popups, and banners\n- Automatic archiving of inactive tabs to maintain tidiness\n- A reader mode that minimizes distractions (great for ADHD)\n- A minimalist user interface that subtly complements any website",
     appStoreId: 6472513080,
     accentColor: "#6366f1",
     screenshots: [
@@ -142,7 +148,8 @@ export const apps: App[] = [
     name: "Gentler Streak",
     icon: "/appstore/gentler/logo.webp",
     category: "Health & Fitness",
-    description: "",
+    description:
+      "Hey, welcome the Gentler Streak - the app that keeps your active life alive! An award-winning health and fitness tracker offers personalized guidance that adapts to your daily capabilities and not the other way around. For those of us who want to move consistently, not constantly.\n\nBuilt with care by a small indie team.\n\n• 2024 Apple Design Award - Social Impact | 2022 Apple Watch App of the Year | App of the Day | Editor’s Choice\n• Featured in The Verge, Forbes, TechCrunch, and more.\n\n▶ PRIVATE DATA STAYS PRIVATE\nYour health and fitness data stays on-device via Apple HealthKit, with no external processing.\n\n▶UNDERSTAND YOUR DAILY READINESS◀\n[KEY HEALTH METRICS]\nStart your day with a summary of key vitals and sleep, helping you detect changes before you feel them. Receive workout suggestions that respond to your readiness. Set home screen widgets to bring this info closer to you.\n\n[FULL SLEEP ANALYSIS]\nSee everything from sleep onset to how much restorative sleep you are getting. View trends over 14 nights in sleep duration, consistency, and stages to spot patterns and improve your sleep hygiene.\n\n[DAILY STEPS, DONE DIFFERENTLY]\nYou can now track daily steps, distance, walking time, flights climbed, and walking heart rate—all with a 14-day trend overview.\nOur approach doesn’t push you to chase step goals. Instead, it helps you understand your daily movement patterns—ideal for everyday walkers and those managing chronic conditions.\n\n[SYNC ACTIVITIES WITH YOUR CYCLE]\nKnow daily stress tolerance of each menstrual cycle phase and receive support for your current state, with workout suggestions like \"Flow Workouts\" along with allowing you to take a pause when your period starts.\n\n▶STAYING ACTIVE ON YOUR TERMS◀\n[STREAK & STATUS]\nKeep your streak alive by following your body’s needs, even when it calls for rest days. When life happens—be it illness, injury, or vacation—adjust your status to reflect real life and skip feeling guilty.\n\n[AWARD-WINNING APPLE WATCH WORKOUT TRACKER]\nTrack real-time training effects and heart rate zones to manage your workout intensity and avoid overtraining. Get a countdown to “overreaching” to know exactly when you're close to pushing too hard for the day.\n\n[PERSONALIZED WORKOUT TRACKING]\nTrack 140+ activities, from chores to a variety of workouts, with detailed maps and metric charts, and stay within your healthy activity levels.\n\n[TAILORED DAILY WORKOUTS]\nGet daily suggestions—ranging from rest to high-intensity exercises—based on your readiness. Go Gentler's on-watch suggestions allow you to scale your exercise duration and/or intensity up or down.\n\n▶ULTIMATE WORKOUT JOURNAL◀\n[PERSONALIZED SUMMARIES]\nTurn your workout summaries into a personalized fitness journal. Customize them with details that matter to you: rename workouts, add notes, photos, and mark your favorite sessions. Plus, adjust the effort using the RPE chart when needed.\n\n[PROGRESS CHARTS]\nYour progress with weekly, monthly and yearly charts, including a weekly, monthly and yearly recap.\n\n[LIVE ACTIVITY & WIDGETS]\nUse Live Activity for tracking on iPhone, and interactive widgets on your Home & Lock screens.\n\n[ACCESSIBLE TO ALL]\nFull support for accessibility preferences including bold text, dynamic type, reduced transparency, increased contrast, motion adjustments, and voiceover.\n\nUpgrade to Gentler Streak Premium with monthly, yearly, or lifetime plans for advanced features and family sharing.",
     appStoreId: 1576857102,
     accentColor: "#f59e0b",
     screenshots: [
@@ -163,7 +170,8 @@ export const apps: App[] = [
     name: "Open",
     icon: "/appstore/open/logo.webp",
     category: "Health & Fitness",
-    description: "",
+    description:
+      "“We believe that mindfulness is more than a form of stress relief — it can be a tool for personal growth, deeper understanding, vibrancy. More than a way to disconnect — it can be a way to feel a part of something bigger. More than simply silence — it can be immersive, beautiful, moving.”\n\n–Raed Khawaja, Open Co-founder & CEO\n\nRegulate your nervous system with Open. Bridge science and spirituality to cleanse your body and mind. Learn breathwork, meditation, and movement techniques designed by experts in neurobiology. Practice on the app and in-person at our flagship studio in Los Angeles. \n\nCLASSES\n\nBREATHE: Since the dawn of civilization, humans have developed techniques for manipulating our breath to induce desired states of consciousness. Now peer-reviewed studies in neuroscience and psychology confirm that breathwork is a powerful toolkit for regulating your nervous system, optimizing your health and well-being, and catalyzing personal transformation. Breathwork is an umbrella term for myriad practices, both ancient and modern. While many techniques are deeply rooted in spiritual traditions like Yoga, Qi Gong, and Buddhism, contemporary applications integrate ancient wisdom with modern science.This synthesis of ancient and modern has given rise to transformational breathwork, designed to induce profound experiences of catharsis, insight, and breakthrough. Experience a mental reset with just a few minutes of conscious breathing.\n\nMEDITATE: Train your awareness and contemplate wisdom – with techniques that span generations, cultures, and traditions – with our daily meditations and monthly programs. Learn how to enhance your focus, reduce your stress and anxiety, and regulate your emotions with simple mindfulness techniques you can incorporate into your daily life. \n\nMOVE: Our methodology is designed through the intelligence of fitness – blending endurance, strength, mobility, and recovery – with the wisdom of mindfulness. A ritual for resilience, strengthening the body and mind.\n\nANYTIME, ANYWHERE: Practice on your time with our endless library, with fresh classes added daily. From simple 5-minute breathwork techniques, to 60-minute strength and conditioning classes, build your practice to fit your schedule and meet your goals. Whether you’re starting your journey or seeking a new challenge, there are classes for every level and mood.\n\nPROGRESS TRACKING: Create a daily habit that sticks with progress tracking, push reminders, streaks, and badges. A consistent breathwork and meditation practice has proven to reduce cortisol levels and regulate the nervous system–decreasing stress, supporting emotional well-being, and enhancing mental clarity. These techniques can also improve physical health by increasing heart rate variability, promoting cardiovascular health, and boosting immune function.\n\nCONNECT WITH US\n\nQuestions? Email us: support@o-p-e-n.com. Follow along on Instagram: @op_e___n.",
     appStoreId: 1482725254,
     accentColor: "#3b82f6",
     screenshots: [
@@ -184,7 +192,8 @@ export const apps: App[] = [
     name: "Moment Pro Camera II",
     icon: "/appstore/moment/logo.webp",
     category: "Photo & Video",
-    description: "",
+    description:
+      "Your Camera, Your Looks, Your Way.\n\nMoment Pro Camera II turns your phone into your favorite camera for photography and filmmaking. Shoot like a pro with full manual controls, creative looks, and an upgraded interface – all in one intuitive app.\n\nWhat’s New in Pro Camera II?\n\nOur first pro camera app has been the #1 rated camera app for years. Now, it’s time for the next chapter. We’ve re-engineered Pro Camera II from the ground up to give you better performance, advanced controls, and new customizable interfaces and shooting modes.\n\nKey Features:\n\n• Pro-Level Exposure Control – Our smart exposure system allows you to take control with Shutter Priority, ISO Priority, Manual, and Auto exposure modes, including the ability to limit Auto ISO to a specific range.\n• Upgraded White Balance – Beyond auto white balance, you can manually configure temperature and tint, choose a preset, or calibrate via a gray card.\n• Advanced Photo Options – Control the level of processing and HDR applied to your photos. Shoot in RAW, ProRAW, TIFF, HEIF, or JPG.\n• Cinematic Video Tools – Apple Log, Open Gate, ProRes, 10-bit recording, and more. Adjust the resolution, color space, frame rate, codec, bitrate, and chroma subsampling for total creative freedom.\n• Precision Monitoring – Get pro-level feedback with Waveform, RGB Histograms, and audio meters — normally reserved for cinema cameras.\n• Aspect Ratio – Frame your shot within your favorite aspect ratio (4:3, 16:9, 3:2, 5:4, 1:1)\n• Designed for All Creators – A beautiful, intuitive interface that adapts to how you shoot. Swipe, tap, and adjust anything immediately with one hand (including a dedicated left-handed layout), or go distraction-free with Zen Mode. Works natively in landscape orientation.\n• Looks, Your Way – Apply creative Looks or import your own LUTs to video and photos. Preview them live, bake them into your footage, or adjust intensity on the fly.\n• Focus Tools That Just Work – Separate reticles for exposure and focus with a tap, or dial in the shot with Manual Focus and Focus Peaking.\n• Quick Actions, Faster Shooting – One swipe to reach your most used tools: flash, stabilization, zebras, focus peaking, grids, and more.\n• Intuitive Lens Control – Remove the guesswork of which lens you are using and eliminate surprises with our Optic Controls. Say goodbye to shaky zoom with our fluid zoom control.\n• Hardware-Ready – Optimized for every iPhone, with seamless integration for external mics and Moment’s entire lens + case ecosystem.\n\nUpcoming Feature Releases\n• Look Store: purchase creator color grades and film emulations\n• Slow Shutter and Timelapse modes\n• Advanced Profile sharing and collaboration tools\n• Extended hardware integration partnerships\n\nWe love hearing from our community. For feature requests, ideas, or support, email us at hello@shopmoment.com or message us @momentprocamera on social media.\n\nFully Compatible with iPhone and Moment's complete ecosystem of lenses, cases, and accessories.",
     appStoreId: 6748837351,
     accentColor: "#f97316",
     screenshots: [
@@ -218,7 +227,7 @@ export const apps: App[] = [
     icon: "/appstore/turf/logo.jpg",
     category: "Sports",
     description:
-      "A skill-based prediction game for sports fans. Make real-time predictions as games unfold, compete on leaderboards, and react together in live chat.",
+      "Turf is a live sports prediction game built for fans who want to stay locked into every moment. As games unfold, Turf asks real-time questions about what will happen next. Make your predictions, compete against other players, and react to the game together in live chat.\n\nCompete against friends and the players on the leaderboard. The more you predict correctly, the higher you climb.\n\nTurf is free to play and designed around skill-based predictions. Not a sports betting app.\n\nFeatures:\n • Live, in-game prediction questions\n • Real-time chat with the crowd\n • Leaderboards and competition\n • New games added weekly\n\nWatch the game. Predict the moment.",
     appStoreId: 6747896331,
     accentColor: "#10b981",
     screenshots: [
@@ -236,7 +245,7 @@ export const apps: App[] = [
     icon: "/appstore/unedo/logo.jpg",
     category: "Education",
     description:
-      "Daily word puzzles that unlock cultural stories about music, food, and traditions. Build your Spanish vocabulary with content designed for native speakers — but with training wheels.",
+      "YOUR SPANISH IS OK\n\nBut probably not where you want it to be.\n\nMaybe you’ve hit a plateau?\nLearning stopped being exciting?\nYou hate feeling like a tourist?\n\nThat’s the moment Unedo is built for.\n\nUNEDO IS A DAILY ADVENTURE IN SPANISH\n\nIt’s for people who already know the basics and want to go further. \n\nEvery day, you play short word puzzles in Spanish.\nEach one unlocks a cultural Spark: a story about the real stuff people talk about.\nMusic everyone knows.\nTV shows people reference all the time.\nFood and places they love.\nSlang, habits, traditions.\n\nThe kind of knowledge that makes Spanish feel familiar instead of foreign.\n\nAs one user put it:\n\"IT'S CONTENT FOR NATIVE SPEAKERS, BUT WITH TRAINING WHEELS\"\n\nYou’re not checking off lessons.\nYou’re moving forward, one day at a time.\nThe pace is intentional.\nYou’re always in control.\n\nSTART A NEW ROUTINE \nOne that will quietly make a big difference in your Spanish.\n\nWHAT'S IN THE APP?\n- Word puzzles that train instinct and pattern recognition\n- Stories packed with cultural references and new vocab\n- Flashcards created automatically from all you discover\n- A personal dictionary that grows with you\n\nWHO IS UNEDO FOR?\nUnedo is built for intermediate learners and up who:\n- don’t need to start from zero\n- are bored with drills and generic content\n- care about culture as much as vocabulary\n- want to understand Spanish as it’s actually used\n\nBUILT WITH INTENTION\nUnedo is ad-free. No noise, just the good stuff.\nIt’s made by a small, independent team and a network of writers around the world, building the language app we wish existed when we were learning ourselves.\n\nOur reviews are full of people who didn’t think Spanish could feel like this again, and now look forward to a few minutes with it every day.\n\n\"The most impactful Spanish learning app I've ever used.\"\n— Andrea W",
     appStoreId: 6503170902,
     accentColor: "#f59e0b",
     screenshots: [
@@ -255,7 +264,7 @@ export const apps: App[] = [
     icon: "/appstore/lazyweather/logo.jpg",
     category: "Lifestyle",
     description:
-      "Understand weather changes by comparing today to yesterday. Quickly decide what to wear without unnecessary features — just colder or warmer.",
+      "Just know how much warmer or colder it is than yesterday, so you can dress accordingly.\n\nSimple, fast, no fuzz.",
     appStoreId: 6467009014,
     accentColor: "#3b82f6",
     screenshots: [
@@ -276,7 +285,8 @@ export const apps: App[] = [
     name: "Knitflow",
     icon: "/appstore/knitflow/logo.webp",
     category: "Lifestyle",
-    description: "",
+    description:
+      "Knitflow is the ultimate app for knitters and crocheters.\n\n1) Craft Timer: Record the time spent on your knitting or crochet projects.\n2) Row Counter: Track stitch counts, repeat cycles, and monitor your progress.\n3) Pattern Storage: Save PDF files and video links to easily access them while crafting.\n4) Yarn Stash: Keep track of your yarns, add manually or search from Ravelry.\n5) Crafting Notes: Take notes and upload images as you work.\n6) Project Management: Manage multiple projects and view them all at a glance.",
     appStoreId: 6740465748,
     accentColor: "#a855f7",
     screenshots: [
@@ -294,7 +304,7 @@ export const apps: App[] = [
     icon: "/appstore/oneyear/logo.jpg",
     category: "Health & Fitness",
     description:
-      "Write one short (or long) memory + add an image each day. Every entry becomes a hand-drawn plant, slowly forming a garden over the year. Journaling that feels light, visual, and easy to keep up with.",
+      "Write one short (or long) memory + add an image each day.\nEvery entry becomes a hand-drawn plant, slowly forming a garden over the year.\n\nJournaling that feels light, visual, and easy to keep up with.\n\n“This is the first time I’ve actually stuck with journaling every day.”\n\nWhy One Year\n\n• One small moment a day\n• Write as much or little as you want\n• No pressure, no streaks\n• Built for consistency, not perfection\n\nHow it works\n\n• Write a short daily memory\n• A new plant grows for that day\n• Over time, a full garden filled with your memories form\n• Revisit any day, any moment\n\nYour privacy comes first\n\n• Private by default\n• Stored on your device or your personal iCloud\n• No accounts, no feeds\n• No tracking or ads\n\nYour garden\n\n• 365 hand-drawn plants, one for each day (no Ai)\n• Watch the year grow day by day\n• Scroll through the full year\n• Option to show plants only on days you wrote\n\nWidgets & sync\n\n• Home & Lock Screen widgets\n• Full garden view or simple progress dots\n• Works across iPhone, iPad, Mac, and Apple Vision Pro\n• Everything stays in sync\n\nEvery day counts.",
     appStoreId: 6740510762,
     accentColor: "#10b981",
     screenshots: [
@@ -312,7 +322,7 @@ export const apps: App[] = [
     icon: "/appstore/grug/logo.jpg",
     category: "Lifestyle",
     description:
-      "grug know: big scary just many small rock wearing fur coat. every sunrise, grug share one wisdom. help you break today rock into small piece. no fancy word. no complicated.",
+      "grug know: big scary just many small rock wearing fur coat.\n\nevery sunrise, grug share one wisdom. help you break today rock into small piece. no fancy word. no complicated. just simple truth that work.\n\n**what grug do:**\n- share daily wisdom when sun rise\n- draw grug dream on wisdom\n- share with other grug\n- widget show today wisdom on home screen\n- pick theme: fire, water, earth, sky, tree, stone\n- grug work in light and dark or give grug color\n\ngrug not guru. grug just know: small step every day make mountain move. perfect never come. better start with broken stick today than wait for perfect stick tomorrow.\n\nwisdom come from real life. fear, work, love, pain, growth. grug speak simple but truth hit deep. like \"fear just smoke - real but not solid\" and \"wanting make poor, grateful make rich.\"\n\neach day different wisdom. truth waiting. grug help you see: you already enough. just need pick up one small rock today.\n\napp simple like grug brain. open, read wisdom, maybe draw feeling. that all. no login. no cloud. no tracking. just you and today truth.\n\nremember: tomorrow not here. only today real. grug help make today count.",
     appStoreId: 6751649802,
     accentColor: "#ec4899",
     screenshots: [
@@ -330,7 +340,7 @@ export const apps: App[] = [
     icon: "/appstore/endel/logo.jpg",
     category: "Health & Fitness",
     description:
-      "Focus, relax, and sleep through the power of sound. Endel creates AI-powered sounds designed to support your everyday life. Backed by science, and enjoyed by millions worldwide.",
+      "Focus, relax, and sleep through the power of sound. Endel creates AI-powered sounds designed to support your everyday life. Backed by science, and enjoyed by millions worldwide.\n\nEndel is powered by its patented core AI technology. It takes inputs like location, environment, and heart rate, to create the optimal personalized soundscape. This happens on the fly and allows Endel to reconnect your state with your circadian rhythm.\n\nGet access to the following classic soundscapes at home, work, or on the move to relax, concentrate, and minimize distractions and brain fatigue:\n\n• Focus – boosts your productivity by helping you concentrate for longer\n\n• Sleep – soothes you into a deep sleep with soft, gentle sounds\n\n• Relax – calms your mind to create feelings of comfort and safety\n\n• Move – feel grounded and present while walking, hiking, or running\n\nENDEL PREMIUM SUBSCRIPTION\n\nAlongside the classics, the Premium package contains the following Endel Soundscapes and features:\n\n• Colored Noise – choose one of 9 colors of noise to focus, relax, sleep, and mask outside sound\n\n• Study – improves concentration and keeps you calm while studying or working\n\n• Dynamic Focus – get your perfect productivity support with real-time sound tuning\n\n• Hibernation – nourish your ears with cozy sounds for cold-season slumber\n\n• Nature Elements – nurture the mind with sounds of nature, your way\n\n• Rainy Outside – cozy up to the gentle patter of rain, blended with sleep-aiding sounds\n\n• Recovery – revives your wellbeing with sounds engineered to lower anxiety\n\n• Spatial Orbit – venture into a more peaceful dimension with an immersive Spatial Audio experience\n\n• Focus Timer – the famous interval work method, upgraded with science-backed Focus sounds\n\nOn top of the much-loved original Endel soundscapes, Endel works with innovative artists and thinkers to create unique experiences. These collaborative Endel Soundscapes are available for Premium users:\n\n• James Blake: Wind Down – prepare your body for sleep with soothing sounds from an award-winning artist\n\n• Grimes: AI Lullaby – supports sleep for babies and adults with original sounds and vocals from Grimes\n\n• Plastikman: Deeper Focus – a deep focus techno soundscape created with Richie Hawtin\n\n• Alan Watts: Wiggly Wisdom – soothing and motivation spoken word soundscape, infused with the playful wisdom from Alan Watts\n\n• Miguel: Clarity Trip – elevate your every step with original sounds from Miguel\n\nEndel Pacific is the patented technology that powers our apps and integrations. All soundscapes are available offline.\n\nApart from the Premium sounds and features, Endel Premium users get access to the exclusive Apple Podcast shows.",
     appStoreId: 1346247457,
     accentColor: "#10b981",
     screenshots: [
@@ -342,6 +352,43 @@ export const apps: App[] = [
       "/appstore/endel/6.webp",
       "/appstore/endel/7.webp",
       "/appstore/endel/8.webp",
+    ],
+  },
+  {
+    id: "Swypn",
+    name: "Swypn",
+    icon: "/appstore/Swypn/logo.jpg",
+    category: "Games",
+    description:
+      "Real or AI? Can You Tell the Difference?\nThink you can spot AI-generated images?\nReal or AI is a fast and useful swipe game that challenges you to decide whether an image is real photography or AI-generated art.\n\nHow it works\n• Look at the image\n• Swipe left or right\n• Find out instantly if you're right\n• Build streaks and improve your accuracy\n\nAs AI-generated photos become more realistic, spotting fake images is harder than ever. Train your eye, sharpen your instincts, and test your media literacy skills.\n\nWhy you'll love it\n• Fast and satisfying gameplay\n• Real vs AI image challenges\n• Track your accuracy and streaks\n• Clean minimal design\n• Perfect for quick sessions\n\nThis is more than a game. It's a test of perception in the age of AI.\nCan you really tell what's real anymore?\nDownload now and prove it.",
+    appStoreId: 6759467546,
+    accentColor: "#ef4444",
+    screenshots: [
+      "/appstore/Swypn/1.webp",
+      "/appstore/Swypn/2.webp",
+      "/appstore/Swypn/3.webp",
+      "/appstore/Swypn/4.webp",
+      "/appstore/Swypn/5.webp",
+      "/appstore/Swypn/6.webp",
+    ],
+  },
+  {
+    id: "anydistance",
+    name: "Any Distance",
+    icon: "/appstore/anydistance/logo.jpg",
+    category: "Health & Fitness",
+    description:
+      "2023 Apple Design Award Winner · Apple Editor's Choice\n\nAny Distance is your ultimate running, walking, hiking, and biking workout tracker.\n\n▸ Beautiful and Functional: Designed to make workout tracking not just a habit but a joy.\n\n▸ Track over 90 workout types on iPhone and Apple Watch, including running, walking, biking, hiking, gym workouts, and more.\n\n▸ Any Distance tracks your pace, calories, distance, heart rate and more. \n\n▸ See your route on the map in 2D and 3D, making every hike, run, walk, or bike ride a visual adventure. \n\n▸ Live Activities: See your run or walk in real time on your lock screen so you don't need to unlock your phone.\n\n▸ Beautiful Sharing: Customizable, eye-catching Instagram story templates designed to flaunt your progress in 3D and AR.\n\n▸ Set goals towards your target distance, calories, or time.\n\n▸ Earn hundreds of achievement medals and digital collectibles.\n\n▸ Privacy: Hide data like pace, time, and routes when you share. Your data stays on your device and is never sold to third parties.\n\n▸ Integrations: Data effortlessly syncs to and from Apple Health, Garmin, and Wahoo.\n\nThank you for trying Any Distance!\n#anydistancecounts\n\nTerms of Service: https://anydistance.club/terms-and-conditions/\nPrivacy Policy: https://anydistance.club/privacy-policy",
+    appStoreId: 1545233932,
+    accentColor: "#10b981",
+    screenshots: [
+      "/appstore/anydistance/1.webp",
+      "/appstore/anydistance/2.webp",
+      "/appstore/anydistance/3.webp",
+      "/appstore/anydistance/4.webp",
+      "/appstore/anydistance/5.webp",
+      "/appstore/anydistance/6.webp",
+      "/appstore/anydistance/7.webp",
     ],
   },
 ];

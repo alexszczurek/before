@@ -172,7 +172,7 @@ export default function ScreenshotGallery({
   }, []);
 
   return (
-    <div className="flex flex-col gap-3 -mx-6 md:mx-0 md:flex-1 md:min-h-0">
+    <div className="flex flex-col gap-3 -mx-6 md:mx-0">
       {imageScreenshots.length > 0 && (
         <div className="hidden md:flex justify-end pr-24">
           <button
@@ -221,7 +221,7 @@ export default function ScreenshotGallery({
       )}
       <motion.div
         ref={scrollRef}
-        className="gallery-scroll flex gap-5 overflow-x-auto pb-4 cursor-grab pl-6 md:pl-0 md:flex-1 md:min-h-0 md:items-stretch"
+        className="gallery-scroll flex gap-5 overflow-x-auto pb-4 cursor-grab pl-6 md:pl-0 md:h-[calc(100vh-18rem)] md:items-stretch"
         variants={container}
         initial={shouldReduceMotion ? "show" : "hidden"}
         animate="show"
